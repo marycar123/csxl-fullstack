@@ -21,7 +21,8 @@ export default {
 const Template = args => {
     return (
         <Stack>
-            <p>Hello, welcome to Storybook! We are going to replace this with a component later. </p>
+            <Link {...args} />
+            <Link url = "https://www.harrypotter.com" display_name = "HP HQ"/>
         </Stack>
     );
 }
@@ -29,6 +30,6 @@ const Template = args => {
 // I've pre-defined arguments for our Default story – feel free to edit!
 export const Default = Template.bind({});
 Default.args = {
-    link: 'https://www.google.com',
-    title: "GO TO GOOGLE"
+    url: 'https://www.google.com',
+    display_name: "GO TO GOOGLE"
 }

@@ -27,8 +27,10 @@ const StyledA = styled.a`
 `
 
 // TODO: add args and complete return()
-export default function Link() {
+export default function Link(props) {
     return (
-        <div />
+        <StyledA href={props.url}>
+            <StyledButton>{props.display_name}</StyledButton>
+        </StyledA>
     );
 };
